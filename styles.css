@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    background-color: #0088ff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    position:relative;
+    width:80%;
+    margin:10px auto;
+    background-color:black;
+    box-shadow: -2px -2px 5px white,2px -2px 5px white;
+  }
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 15px;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+
+.title {
+    font-size: 30px;
+    line-height: 1px;
+    padding: 0 30px;
+    color: white
+}
+
+.left-title {
+    font-weight: bold;
+}
+
+.right-title {
+    padding-left: 4px;
+    color: red;
+}
+
+.navigation {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    opacity: 1;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.parent {
+    padding: 0 150px;
+    cursor: pointer;
+}
+
+.right-nav {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.username-picture {
+    color: white;
+}
+
+.wrapper > .left-nav > div {
+    margin-right: 20px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.page-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+}
+
+.page-wrapper, a {
+    color: white;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.page-wrapper, a:hover {
+    color: red;
+}
