@@ -19,9 +19,9 @@
                     <span class="right-title">Suggests</span>
                 </div>
                 <ul class="navigation">
-                    <li class="parent"><a class="link" href="index.html">Home</a></li>
-                    <li class="parent"><a class="link" href="all.html">All Games</a></li>
-                    <li class="parent"><a class="link" href="about.html">About</a></li>
+                    <li class="parent"><a class="link" href="index.php">Home</a></li>
+                    <li class="parent"><a class="link" href="all.php">All Games</a></li>
+                    <li class="parent"><a class="link" href="about.php">About</a></li>
                 </ul>
             <div class="right-nav">
                 <div class="username-picture">
@@ -32,11 +32,16 @@
         </div>
 
         <div class="info">
-        <span class="name">Game: <?php $sql = "SELECT game from video_games";
+            <span class="name">
+                <?php $sql = "SELECT * from video_games";
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0){
-                        while($row = $result->fetch_assoc()) {
-                            echo "<br> Game: ".$row["game"]."<br>";
+                       while($row = $result->fetch_assoc()) {
+                            echo '<p class="genre_style">'.'Genre: '.$row['genre'].'</p>';
+                            echo '<p class="game_style">'.'Game: '.$row['game'].'</p>';
+                            echo '<p class="game_style">'.'Price: '.$row['price'].'</p>';
+                            echo '<p class="game_style">'.'Difficulty: '.$row['difficulty'].'</p>';
+                            echo '<p class="game_style">'.'Platform(s): '.$row['platform(s)'].'</p>';
                         }
                     } else {
                         echo "0 results";

@@ -90,3 +90,14 @@ li {
 .page-wrapper, a:hover {
     color: red;
 }
+
+.genre_style {
+    font-size: 30px;
+}
+.game_style {
+    font-size: 20px;  
+    display: inline-block;
+    zoom: 1;
+    width: 25%;
+    text-align: center;
+}

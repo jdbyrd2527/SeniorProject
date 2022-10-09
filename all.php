@@ -13,9 +13,9 @@
                     <span class="right-title">Suggests</span>
                 </div>
                 <ul class="navigation">
-                    <li class="parent"><a class="link" href="index.html">Home</a></li>
-                    <li class="parent"><a class="link" href="all.html">All Games</a></li>
-                    <li class="parent"><a class="link" href="about.html">About</a></li>
+                    <li class="parent"><a class="link" href="index.php">Home</a></li>
+                    <li class="parent"><a class="link" href="all.php">All Games</a></li>
+                    <li class="parent"><a class="link" href="about.php">About</a></li>
                 </ul>
             <div class="right-nav">
                 <div class="username-picture">
