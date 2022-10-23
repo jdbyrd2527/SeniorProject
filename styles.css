@@ -1,42 +1,46 @@
 body {
     margin: 0px;
-    background-color: #0088ff;
+    background-color: #00a2ff;
     font-family: 'Raleway', sans-serif;
 }
 
 .container {
-    position:relative;
-    width:80%;
-    margin:10px auto;
+    position:relatve;
+    margin-left: auto;
+    margin-right: auto;
     background-color:black;
     box-shadow: -2px -2px 5px white,2px -2px 5px white;
   }
 
 .wrapper {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #222;
-    padding: 15px;
+    padding: 10px;
     text-transform: uppercase;
     overflow: hidden;
 
 }
 
 .title {
-    font-size: 30px;
+    font-size: 1.5em;
     line-height: 1px;
-    padding: 0 30px;
+    padding: 0 .25em;
     color: white
 }
 
 .left-title {
+    font-size: 1em;
     font-weight: bold;
 }
 
 .right-title {
-    padding-left: 4px;
+    font-size: 1em;
+    padding-left: 6px;
     color: red;
 }
 
@@ -56,17 +60,18 @@ li {
 }
 
 .parent {
-    padding: 0 150px;
+    padding: 0 100px;
     cursor: pointer;
 }
 
 .right-nav {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .username-picture {
     color: white;
+    margin-right: 1.2em;
 }
 
 .wrapper > .left-nav > div {
@@ -91,13 +96,20 @@ li {
     color: red;
 }
 
-.genre_style {
-    font-size: 30px;
-}
-.game_style {
-    font-size: 20px;  
+.all{
     display: inline-block;
     zoom: 1;
     width: 25%;
+    text-align: center; 
+}
+.genre_style {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+.game_style {
+    color: black;
+    font-size: 13px;  
+    display: block;
     text-align: center;
 }

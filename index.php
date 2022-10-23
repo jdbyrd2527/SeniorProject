@@ -33,16 +33,17 @@
 
         <div class="info">
             <span class="name">
-                <?php $sql = "SELECT * from video_games";
+                <?php $sql = "SELECT * from video_games ORDER BY genre";
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0){
                        while($row = $result->fetch_assoc()) {
-                            echo '<p class="genre_style">'.'Genre: '.$row['genre'].'</p>';
-                            echo '<p class="game_style">'.'Game: '.$row['game'].'</p>';
-                            echo '<p class="game_style">'.'Price: '.$row['price'].'</p>';
-                            echo '<p class="game_style">'.'Difficulty: '.$row['difficulty'].'</p>';
-                            echo '<p class="game_style">'.'Platform(s): '.$row['platform(s)'].'</p>';
-                        }
+                        echo '<ul class="all">';
+                            echo '<li class="genre_style">'.'Genre: '.$row['genre'].'</li>';
+                            echo '<li class="game_style">'.'Game: '.$row['game'].'</li>';
+                            echo '<li class="game_style">'.'Price: '.$row['price'].'</li>';
+                            echo '<li class="game_style">'.'Platform(s): '.$row['platform(s)'].'</li>';
+                        echo '</ul>';
+                    }
                     } else {
                         echo "0 results";
                     }
