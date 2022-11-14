@@ -49,6 +49,9 @@
 					<i class="fas fa-lock"></i>
 				</label>
                 <input type="password" name="password2" placeholder="Confirm Password" id="password" required>
+				<label for="email">
+					<i class="fas fa-envelope"></i>
+				</label>
                 <input type="text" name="email" placeholder="Email" value="<?php echo $email; ?>" id="email" required>
 				<input type="submit" name="user">
                 <a class="link" href="login.php">Already a member? Login</a>
