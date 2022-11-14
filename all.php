@@ -44,15 +44,16 @@
 
         <div class="info">
             <span class="name">
-                <?php $sql = "SELECT * from video_games ORDER BY genre";
+                <?php $sql = "SELECT * from vidgames";
                     $result = $conn->query($sql);
                     if ($result->num_rows > 0){
                        while($row = $result->fetch_assoc()) {
                         echo '<ul class="all">';
+                            echo '<li class ="pic_style">'.'<img name ="pic" src="'.$row['picture'].'" width="300" height="300"/></li>';
                             echo '<li class="genre_style">'.'Genre: '.$row['genre'].'</li>';
                             echo '<li class="game_style">'.'Game: '.$row['game'].'</li>';
-                            echo '<li class="game_style">'.'Price: '.$row['price'].'</li>';
-                            echo '<li class="game_style">'.'Platform(s): '.$row['platform(s)'].'</li>';
+                            echo '<li class="game_style">'.'Price: '.$row['publisher'].'</li>';
+                            echo '<li class="game_style">'.'Platform(s): '.$row['platform'].'</li>';
                         echo '</ul>';
                     }
                     } else {

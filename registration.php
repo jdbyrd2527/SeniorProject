@@ -1,3 +1,6 @@
+<?php 
+    include('server.php')
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -29,21 +32,27 @@
 								echo '';?><img src="images/Portrair_Placeholder.jpg" width="40" height="40"></div>                   
                         </div>
                     </div>
-                </div>  
-		<div class="login">
-			<h1>Login</h1>
-			<form action="authenticate.php" method="post">
+                </div> 
+            <div class="login">
+			    <h1>Register</h1>
+                <?php include('errors.php'); ?>
+			    <form action="registration.php" method="post">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
-				<input type="text" name="username" placeholder="Username" id="username" required>
+				<input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>" id="username" required>
 				<label for="password">
 					<i class="fas fa-lock"></i>
 				</label>
-				<input type="password" name="password" placeholder="Password" id="password" required>
-				<input type="submit" value="Login">
-                <a class="link" href="registration.php">Sign Up</a>
+				<input type="password" name="password1" placeholder="Password" id="password" required>
+                <label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+                <input type="password" name="password2" placeholder="Confirm Password" id="password" required>
+                <input type="text" name="email" placeholder="Email" value="<?php echo $email; ?>" id="email" required>
+				<input type="submit" name="user">
+                <a class="link" href="login.php">Already a member? Login</a>
 			</form>
 		</div>
 	</body>
-</html>
+</html
