@@ -102,16 +102,72 @@ li {
     width: 28%;
     text-align: center; 
 }
-.genre_style {
-    color: black;
-    font-size: 30px;
+
+.game_style {
+    color: black ;
+    font-size: 27px;
+    font-weight: bold;
     text-align: center;
 }
-.game_style {
+.genre_style {
     color: black;
-    font-size: 13px;  
+    font-size: 20px;
+    text-align: center;
+}
+.all_style {
+    color: black;
+    font-size: 20px;  
     display: block;
     text-align: center;
+}
+
+.interested {
+    background-color: #4CAF50;
+    border: bold;
+    color: black;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.interested:hover {
+    background-color: #33cc33;
+    border: bold;
+    color: black;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.not_interested {
+    background-color: red;
+    border: bold;
+    color: black;
+    padding: 15px 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.not_interested:hover {
+    background-color: #990000;
+    border: bold;
+    color: black;
+    padding: 15px 25px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .logsign {

@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gamer Suggests</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container"></div>

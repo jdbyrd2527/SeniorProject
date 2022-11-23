@@ -7,7 +7,7 @@
 		<meta charset="utf-8">
 		<title>Login</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-        <link href="login.css" rel="stylesheet" type="text/css">
+        <link href="css/login.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
         <body>
@@ -35,7 +35,6 @@
                 </div> 
             <div class="login">
 			    <h1>Register</h1>
-                <?php include('errors.php'); ?>
 			    <form action="registration.php" method="post">
 				<label for="username">
 					<i class="fas fa-user"></i>
